@@ -3,7 +3,7 @@ package com.kcsl.sscv;
 import java.math.BigInteger;
 import java.util.Random;
 
-public class Loop2_vulnerable {
+public class Loop2_not_vulnerable {
 	
 	private static int MAX_INPUT = 500;
 	
@@ -27,9 +27,6 @@ public class Loop2_vulnerable {
 	}
 	
 	public static BigInteger compose(boolean b, BigInteger a, BigInteger p) {
-		if(b) {
-			mode = 1;
-		}
 		return differ(a, MAX_INPUT / 2, p, ONE);
 	}
 	

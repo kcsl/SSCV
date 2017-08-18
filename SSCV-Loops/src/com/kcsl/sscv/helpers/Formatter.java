@@ -1,4 +1,4 @@
-package com.kcsl.sscv.library;
+package com.kcsl.sscv.helpers;
 
 import java.util.Arrays;
 import java.util.Random;

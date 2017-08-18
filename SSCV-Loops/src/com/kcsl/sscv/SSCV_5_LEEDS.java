@@ -1,6 +1,6 @@
 package com.kcsl.sscv;
 
-import com.kcsl.sscv.library.BTree;
+import com.kcsl.sscv.helpers.BTree;
 
 /*
  * This example is based on a database application. The database stores keys and a user can insert keys into it.

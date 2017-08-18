@@ -3,7 +3,17 @@ package com.kcsl.sscv;
 import java.math.BigInteger;
 import java.util.Random;
 
-public class Loop1_not_vulnerable {
+/*
+ * SSCV 1
+ * 
+ * Question : Is there a side channel in time in the given code which helps an attacker to determine the value of myInput?
+ * 
+ * Additional Information : A benign user is running the code and attacker can observe the time it takes to run the code.
+ * 
+ * Patterns covered : Pattern 2 and Pattern 4
+ */
+
+public class SSCV_1 {
 	
 	private static int MAX_INPUT = 500;
 	
@@ -19,7 +29,7 @@ public class Loop1_not_vulnerable {
 		
 		BigInteger prime = BigInteger.probablePrime(127, new Random());
 		
-		for (int j = 0; j <= MAX_INPUT; j++){
+		for (int j = myInput; j <= MAX_INPUT; j++){
             BigInteger d = differ(arr[j], MAX_INPUT / 2, prime, ONE);
 		}
 	}
